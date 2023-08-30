@@ -1,0 +1,25 @@
+/* 全局通用的自定义样式类 */
+
+// 可点击文字
+.common-text-clickable {
+  color: $primary;
+  cursor: pointer;
+}
+// 提示/警告文字
+.common-error-text {
+  color: $danger;
+  font-size: 12px;
+}
+// 单行超出省略
+.overflowHidden {
+  @include overflowEllipsis;
+}
+
+// 状态原点
+.common-status-icon {
+  height: 8px;
+  width: 8px;
+  background-color: #33c800;
+  border-radius: 50%;
+  display: inline-block;
+}

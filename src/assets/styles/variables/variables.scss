@@ -1,0 +1,104 @@
+/* @describe 样式变量 */
+
+/*全局基础变量
+---------------------------------------------------*/
+/* color define */
+$white: #ffffff;
+$black: #000000;
+
+$primary: #2468f1;
+$success: #33C89C;
+$warning: #EA8532;
+$danger: #FF6760;
+$info: #909399;
+
+$primary-light-9: mix($white, $primary, 90%);
+// 背景色
+$bg-color: #f1f2f3;
+// 文字颜色
+$base-text-color: #172241; // 主要文字颜色
+$base-text-color-regular: #4e5370; // 常规文字颜色
+$base-text-color-secondary: #9ea0b1; // 次要文字颜色
+$base-text-color-placeholder: #c3c7cc; // 占位符颜色/提示性文字
+// 边框色
+$border-color: #d8dade; // 边框线
+$border-color-light: #ebecee; // 分割线
+$border-color-lighter: #ebecee;
+$border-color-extra-light: #f2f6fc;
+// 阴影
+$base-box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+
+/* 尺寸
+---------------------------------------------------*/
+$size-mini: 28px;
+$size-small: 32px;
+$size-medium: 36px;
+$size-default: 40px;
+
+/* 层级
+---------------------------------------------------*/
+$z-index-minus-1: -1;
+$z-index-0: 0;
+$z-index-1: 1;
+$z-index-10: 10;
+$z-index-100: 100;
+$z-index-1000: 1000;
+$z-index-10000: 10000;
+
+/* 深浅色主题
+---------------------------------------------------*/
+// 深色
+$dark-color: #0d1f40;
+$dark-bg-color: #363f6e;
+$dark-text-color: $white;
+// 浅色
+$light-color: #ffffff;
+
+/* 全局配置
+---------------------------------------------------*/
+// 顶部head高度
+$head-height: 44px;
+// 顶部文字色
+$head-text-color: rgba($white, 0.8);
+// 顶部head背景色
+//$head-bg-color: rgba(36, 104, 241, 0.8);
+$head-bg-color: #0d1f40;
+// 顶部导航文字激活色
+$head-nav-color-active: $white;
+// 顶部导航文字激活色
+$head-nav-color-active: $white;
+// 顶部导航激活项背景色
+$head-nav-bg-active: mix($white, $head-bg-color, 20%);
+// 顶部head底部边框
+$head-border-bottom: none;
+// 顶部head盒阴影
+$head-box-shadow: 0px 0px 14px 0px rgba(213, 213, 228, 0.24);
+// logo背景色
+$logo-bg-color: $head-bg-color;
+
+// 侧边栏宽度
+$aside-width: 200px;
+// 侧边栏宽度-折叠
+$aside-width--collapse: 64px;
+// 侧边栏背景色
+$aside-bg-color: $white;
+// 侧边栏文字大小
+$aside-font-size: 12px;
+// 侧边栏菜单文字颜色
+$aside-menu-color: $base-text-color-regular;
+// 侧边栏菜单文字激活颜色
+$aside-menu-color-active: $primary;
+// 侧边栏菜单激活项背景色
+$aside-menu-bg-active: $primary-light-9;
+// 侧边栏菜单鼠标悬浮颜色
+$aside-menu-bg-hover: $primary-light-9;
+// 侧边栏菜单项高度
+$aside-menu-height: 40px;
+// 侧边栏菜单内边距
+$aside-menu-padding: 20px;
+// 单行超出显示省略号
+@mixin overflowEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

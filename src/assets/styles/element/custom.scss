@@ -1,0 +1,186 @@
+/* Icon 图标
+---------------------------------------------------*/
+.el-icon {
+  cursor: pointer;
+}
+/* Dialog 对话框
+---------------------------------------------------*/
+.el-dialog {
+  //margin-top: 0!important;
+  //top: 50%;
+  //transform: translateY(-50%);
+  .el-dialog__header {
+    padding: 16px 24px;
+    border-bottom: 1px solid $border-color-lighter;
+    .el-dialog__title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .el-dialog__headerbtn {
+      right: 24px;
+      .el-dialog__close {
+        font-size: 18px;
+        color: $base-text-color-secondary;
+        font-weight: 600;
+      }
+    }
+  }
+  .el-dialog__body {
+    padding: 30px 32px;
+    .el-select,
+    .el-date-editor {
+      width: 100%;
+    }
+  }
+  .el-dialog__footer {
+    padding: 8px 24px;
+    border-top: 1px solid $border-color-lighter;
+    .el-button {
+      min-width: 72px;
+      height: 30px;
+      padding: 0;
+    }
+    .el-button + .el-button {
+      margin-left: 16px;
+    }
+  }
+}
+/* MessageBox 弹框
+---------------------------------------------------*/
+.el-message-box {
+  padding-bottom: 0;
+  border-radius: 2px;
+  width: 480px;
+  .el-message-box__header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border-color-lighter;
+    .el-message-box__title {
+      font-size: 16px;
+      color: $base-text-color;
+      font-weight: 600;
+    }
+    .el-message-box__close {
+      color: $base-text-color-secondary;
+    }
+  }
+  .el-message-box__content {
+    padding: 32px 30px;
+    font-size: 14px;
+    color: $base-text-color;
+    .el-message-box__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .el-message-box__status {
+      position: static;
+      transform: none;
+      padding-right: 10px;
+    }
+    .hide {
+      display: none;
+    }
+    .el-message-box__message {
+      padding-left: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .hide+.el-message-box__message {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .el-message-box__btns {
+    padding: 12px 24px;
+    border-top: 1px solid $border-color-lighter;
+    .el-button {
+      min-width: 72px;
+      height: 30px;
+      padding: 0;
+    }
+    .el-button + .el-button {
+      margin-left: 16px;
+    }
+  }
+}
+/* Form 表单
+---------------------------------------------------*/
+.el-form-item {
+  margin-bottom: 16px;
+  .el-form-item__label {
+    font-size: 12px;
+  }
+  .el-form-item__content {
+    font-size: 12px;
+  }
+  .el-cascader,
+  .el-select {
+    width: 100%;
+  }
+}
+/* Drawer 抽屉
+---------------------------------------------------*/
+.el-drawer {
+  .el-drawer__header {
+    padding: 16px 24px;
+    margin-bottom: 0;
+    border-bottom: 1px solid $border-color;
+    font-weight: 600;
+  }
+  .el-drawer__body {
+    height: calc(100% - 56px);
+    padding: 24px 24px calc(24px + 44px);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    & > *:not(.el-drawer__footer) {
+      height: 100%;
+      overflow: auto;
+    }
+    .el-drawer__footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 12px 24px;
+      border-top: 1px solid $border-color;
+      text-align: right;
+    }
+  }
+}
+
+/* Dropdown 下拉菜单
+---------------------------------------------------*/
+.el-dropdown {
+  .el-dropdown-link {
+    color: $primary;
+    font-size: 12px;
+  }
+}
+
+/* Tree 树结构
+---------------------------------------------------*/
+.el-tree.common-tree {
+  font-size: 12px;
+  line-height: 36px;
+  color: $base-text-color-regular;
+  .el-tree-node__label {
+    font-size: 12px;
+  }
+  .custom-tree-node {
+    width: 100%;
+    @include overflowEllipsis;
+    display: flex;
+    align-items: center;
+    img,
+    i {
+      //font-size: 16px;
+      font-size: 12px;
+      margin-right: 8px;
+    }
+    span {
+      @include overflowEllipsis;
+    }
+  }
+}

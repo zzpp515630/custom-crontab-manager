@@ -1,0 +1,35 @@
+/* 全局间距 */
+:root{
+  --space: 8px;
+  --space-half: calc(var(--space) / 2);
+}
+.space-m {
+  margin: var(--space);
+  &l{
+    margin-left: var(--space);
+  }
+  &r{
+    margin-right: var(--space);
+  }
+  &t{
+    margin-top: var(--space);
+  }
+  &d{
+    margin-bottom: var(--space);
+  }
+}
+.double-m {
+  //margin: calc(var(--space * 2));
+  //&l{
+  //  margin-left: calc(var(--space) * 2);
+  //}
+  //&r{
+  //  margin-right: calc(var(--space) * 2);
+  //}
+  //&t{
+  //  margin-top: calc(var(--space) * 2);
+  //}
+  //&d{
+  //  margin-bottom: calc(var(--space) * 2);
+  //}
+}
